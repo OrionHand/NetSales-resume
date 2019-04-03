@@ -1,0 +1,46 @@
+<div class="">
+    <div class="card-body helvetica ">
+        <div class="card-body p-0 border-top-blue" style="width: 340px;">
+            <div class="row m-0 " style="height: 40px; width: 340px">
+                <div class="col  ">
+                    <p class="titulo m-0 pt-2 pb-2">Net Sales - Strategic Grocery</p>
+                </div>
+                <div class="col-1 pt-2 mr-2">
+                    <a href=""> <img style="width: 10px;" src="../assets/img/Chevron-Right-Gray.png" alt=""> </a>
+                </div>
+            </div>
+            <div class="row m-0 " style="height: 40px; width: 340px">
+                <div class="col  ">
+                    <p class="m-0 pt-2 pb-2" id="gris">YTD till Feb-2019</p>
+                </div>
+                <div class="col-3 ">
+
+                    <!-- Default checked -->
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+
+                        <label class="custom-control-label" for="customSwitch1">%</label>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="nav navegacion row m-0" style="width: 340px;height: 35;">
+                <a class="nav-link col activo " href="#total">Total</a>
+                <a class="nav-link col" href="#afc">AFC</a>
+                <a class="nav-link col" href=#bcc>BCC</a>
+                <a class="nav-link col" href="#fc">FC</a>
+            </nav>
+
+
+            <app-tarjeta [items]="total" id="total" class="ocultar"></app-tarjeta>
+            <app-tarjeta [items]="afc" id="afc" class="ocultar"></app-tarjeta>
+            <app-tarjeta [items]="bcc" id="bcc" class="ocultar"></app-tarjeta>
+            <app-tarjeta [items]="fc" id="fc" class="ocultar"></app-tarjeta>
+
+
+
+
+        </div>
+
+
+    </div>
